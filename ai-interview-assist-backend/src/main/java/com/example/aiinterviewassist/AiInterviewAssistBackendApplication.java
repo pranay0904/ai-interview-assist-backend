@@ -1,4 +1,4 @@
-package com.pranay.aiinterviewassist;
+package com.example.aiinterviewassist;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

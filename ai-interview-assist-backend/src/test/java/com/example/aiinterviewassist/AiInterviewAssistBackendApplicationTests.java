@@ -1,4 +1,4 @@
-package com.pranay.aiinterviewassist;
+package com.example.aiinterviewassist;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
