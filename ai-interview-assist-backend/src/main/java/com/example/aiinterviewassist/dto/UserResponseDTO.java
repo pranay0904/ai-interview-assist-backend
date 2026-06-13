@@ -3,8 +3,9 @@ package com.example.aiinterviewassist.dto;
 import lombok.Data;
 
 @Data
-public class LoginRequestDTO {
+public class UserResponseDTO {
+    private String name;
     private String email;
-    private String password;
     private String userId;
+    private String role;
 }
