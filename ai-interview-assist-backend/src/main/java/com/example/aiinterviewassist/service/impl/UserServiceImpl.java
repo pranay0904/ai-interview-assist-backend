@@ -21,6 +21,7 @@ public class UserServiceImpl implements UserService {
     private final UserMapper userMapper;
     private final PasswordEncoder passwordEncoder;
     private final JwtService jwtService;
+
     @Override
     public String registerUser(RegisterRequestDTO registerRequestDTO) {
         if (userRepository.findByEmail(registerRequestDTO.getEmail()).isPresent()){
@@ -33,6 +34,7 @@ public class UserServiceImpl implements UserService {
         return "User Registered Successfully";
     }
 
+    @Override
     public UserResponseDTO loginUser(LoginRequestDTO loginRequestDTO){
         User user =userRepository.findByEmail(loginRequestDTO.getEmail())
                 .orElseThrow(() -> new UserNotFound("User not found"));
