@@ -16,4 +16,5 @@ public interface UserMapper {
     UserResponseDTO loginMapper(User user);
 
     ResumeResponseDTO resumeMapper(Resume resume);
+
 }
